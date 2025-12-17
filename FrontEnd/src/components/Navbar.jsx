@@ -1,37 +1,58 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Packages', href: '#packages' },
-        { name: 'Portfolio', href: '#portfolio' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: 'home' },
+        { name: 'About', href: 'about' },
+        { name: 'Services', href: 'services' },
+        { name: 'Portfolio', href: 'portfolio' },
+        { name: 'Contact', href: 'contact' },
     ];
+
+    const handleScroll = (id) => {
+        if (!isHome) return;
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setIsOpen(false);
+    };
 
     return (
         <nav className="fixed w-full z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0">
-                        <a href="#" className="text-2xl font-serif font-bold text-accent tracking-wider">
+                        <Link to="/" className="text-2xl font-serif font-bold text-accent tracking-wider">
                             ARVAYON
                             <span className="block text-xs font-sans text-white tracking-[0.2em] uppercase">Pro Build Studio</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
                             {navLinks.map((link) => (
-                                <a
-                                    key={link.name}
-                                    href={link.href}
-                                    className="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 uppercase tracking-wide"
-                                >
-                                    {link.name}
-                                </a>
+                                isHome ? (
+                                    <a
+                                        key={link.name}
+                                        href={`#${link.href}`}
+                                        className="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 uppercase tracking-wide cursor-pointer"
+                                    >
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        key={link.name}
+                                        to={`/#${link.href}`}
+                                        className="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 uppercase tracking-wide"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )
                             ))}
                         </div>
                     </div>
@@ -60,14 +81,25 @@ const Navbar = () => {
                 <div className="md:hidden bg-primary border-b border-white/10">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium uppercase"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.name}
-                            </a>
+                            isHome ? (
+                                <a
+                                    key={link.name}
+                                    href={`#${link.href}`}
+                                    className="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium uppercase"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}
+                                </a>
+                            ) : (
+                                <Link
+                                    key={link.name}
+                                    to={`/#${link.href}`}
+                                    className="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium uppercase"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}
+                                </Link>
+                            )
                         ))}
                     </div>
                 </div>

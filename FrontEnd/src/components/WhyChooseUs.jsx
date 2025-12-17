@@ -30,7 +30,10 @@ const WhyChooseUs = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us?</h2>
-                        <div className="w-20 h-1 bg-accent mb-10"></div>
+                        <div className="w-20 h-1 bg-accent mb-6"></div>
+                        <blockquote className="border-l-4 border-accent pl-4 italic text-gray-300 mb-10 text-lg">
+                            "Building with integrity, designing with passion, and delivering with excellence."
+                        </blockquote>
 
                         <div className="space-y-8">
                             {benefits.map((benefit, index) => (
