@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
+import BottomNav from './components/BottomNav';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
         </Routes>
+        <BottomNav />
       </div>
     </Router>
   );

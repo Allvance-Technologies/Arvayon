@@ -63,11 +63,11 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
-                    Design Beyond <span className="text-accent">Imagination</span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase">
+                    End-to-End Architecture, <br />Interior & Construction Solutions
                 </h1>
-                <p className="text-lg md:text-3xl text-gray-100 mb-0 font-light tracking-wide animate-fade-in-up delay-200 italic">
-                    "Building Tomorrow's Dreams, Today"
+                <p className="text-lg md:text-2xl text-accent mb-0 font-medium tracking-widest animate-fade-in-up delay-200 uppercase">
+                    Architecture | Structural | Interior | PMC | Construction
                 </p>
             </div>
         </section>
