@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPhone, FaEnvelope,
 
 const Footer = () => {
     return (
-        <footer className="bg-goldBg py-16 border-t border-white/20">
+        <footer className="bg-primary md:bg-goldBg py-16 border-t border-white/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
                     {/* Brand Section */}

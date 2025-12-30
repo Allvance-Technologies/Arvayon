@@ -6,7 +6,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
 
 
     return (
-        <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#C6A868] backdrop-blur-sm border-t border-white/20 shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+        <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#D4AF37] backdrop-blur-sm border-t border-white/20 shadow-[0_0_20px_rgba(0,0,0,0.2)]">
             <div className="grid grid-cols-5 h-20 items-center px-2">
                 {/* Company/About */}
                 <Link
@@ -37,8 +37,8 @@ const MobileBottomNav = ({ onMenuClick }) => {
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="absolute -top-10"
                     >
-                        <div className="w-20 h-20 rounded-full bg-[#C6A868] flex items-center justify-center border-4 border-[#C6A868] shadow-[0_0_15px_rgba(0,0,0,0.2)]">
-                            <div className="w-[68px] h-[68px] rounded-full overflow-hidden border border-white/40 bg-white">
+                        <div className="w-20 h-20 rounded-full bg-[#D4AF37] flex items-center justify-center border-4 border-[#D4AF37] shadow-[0_0_15px_rgba(0,0,0,0.2)]">
+                            <div className="w-[68px] h-[68px] rounded-full overflow-hidden border border-white/40 bg-white flex items-center justify-center">
                                 <img src={logoIcon} alt="ARVAYON" className="w-full h-full object-cover" />
                             </div>
                         </div>
