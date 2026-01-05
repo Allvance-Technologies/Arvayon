@@ -5,22 +5,32 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
+import EmployeeCard from './pages/EmployeeCard';
 import BottomNav from './components/BottomNav';
+
+const MainLayout = () => {
+  return (
+    <div className="bg-primary min-h-screen text-white">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:id" element={<ServiceDetail />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+      <BottomNav />
+    </div>
+  );
+};
 
 function App() {
   return (
     <Router>
-      <div className="bg-primary min-h-screen text-white">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-        <BottomNav />
-      </div>
+      <Routes>
+        <Route path="/profile/:id" element={<EmployeeCard />} />
+        <Route path="/*" element={<MainLayout />} />
+      </Routes>
     </Router>
   );
 }
