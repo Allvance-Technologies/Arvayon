@@ -17,9 +17,9 @@ const Home = () => {
     return (
         <div className="min-h-screen pb-24 md:pb-0">
             <Navbar />
-            <div className="pt-36 md:pt-24">
+            <div className="pt-28 md:pt-24">
                 <Hero />
-               
+
                 <About />
                 <VisionMission />
                 {/* ProjectScroll moved to Hero background */}

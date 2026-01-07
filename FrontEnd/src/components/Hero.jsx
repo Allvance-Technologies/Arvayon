@@ -26,7 +26,7 @@ const Hero = () => {
         return () => clearInterval(interval);
     }, [images.length]);
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-primary">
+        <section id="home" className="relative h-[80vh] md:h-screen flex items-center justify-center overflow-hidden bg-primary">
             {/* Offer Bar - Positioned absolute at top */}
             <div className="absolute top-0 left-0 w-full z-40 hidden md:block">
                 <OfferAd />
@@ -70,10 +70,10 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase grid grid-cols-3 gap-y-2 w-full">
-                    <span className="col-start-1 row-start-1 text-left">Design</span>
-                    <span className="col-start-2 row-start-2 text-center">Beyond</span>
-                    <span className="col-start-3 row-start-3 text-right">Imagination</span>
+                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase grid grid-cols-3 gap-y-2 w-full">
+                    <span className="col-span-2 col-start-1 md:col-span-1 md:col-start-1 row-start-1 text-left">Design</span>
+                    <span className="col-span-1 col-start-2 md:col-span-1 md:col-start-2 row-start-2 text-center">Beyond</span>
+                    <span className="col-span-2 col-start-2 md:col-span-1 md:col-start-3 row-start-3 text-right">Imagination</span>
                 </h1>
 
             </div>

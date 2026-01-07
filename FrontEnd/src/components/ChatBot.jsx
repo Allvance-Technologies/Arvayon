@@ -32,7 +32,7 @@ const ChatBot = () => {
                 </a>
 
                 {/* Free Estimate Button - Vertical on Mobile */}
-                <div className="fixed right-[18px] top-[70%] md:static md:w-24 md:transform-none md:rotate-0 origin-center transform rotate-[-90deg] translate-x-[50%] z-50">
+                <div className="fixed right-0 top-[250%] md:static md:w-24 md:transform-none md:rotate-0 origin-center transform rotate-[-90deg] translate-x-[34%] z-50">
                     <a
                         href="#contact"
                         className="block bg-[#D4B878] text-primary font-bold rounded-md shadow-lg border border-primary/20 px-3 py-1.5 text-[10px] text-center hover:scale-105 transform transition-all duration-300 whitespace-nowrap uppercase tracking-wider"
