@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage';
 import EmployeeCard from './pages/EmployeeCard';
 import BottomNav from './components/BottomNav';
 import ScrollToTop from './components/ScrollToTop';
+import ChatBot from './components/ChatBot';
 
 const MainLayout = () => {
   return (
@@ -29,6 +30,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ChatBot />
       <Routes>
         <Route path="/profile/:id" element={<EmployeeCard />} />
 

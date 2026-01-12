@@ -9,7 +9,6 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import ChatBot from '../components/ChatBot';
 import TrustSection from '../components/TrustSection';
 import Workflow from '../components/Workflow';
 
@@ -31,7 +30,6 @@ const Home = () => {
                 <Portfolio />
                 <Contact />
                 <Footer />
-                <ChatBot />
             </div>
         </div>
     );
