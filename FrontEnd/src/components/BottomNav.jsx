@@ -10,7 +10,7 @@ const NavItem = ({ icon, label, href, isHome }) => {
       <span className="w-6 h-6 rounded-md bg-primary text-accent border border-white/10 flex items-center justify-center mb-1">
         <IconComp className="w-3.5 h-3.5" />
       </span>
-      <span className="text-gray-300">{label}</span>
+      <span className="text-primary font-medium">{label}</span>
     </>
   );
   return isHome ? (
@@ -57,7 +57,7 @@ const BottomNav = () => {
           <BrandButton isHome={isHome} />
         </div>
 
-        <nav className="bg-primary/95 backdrop-blur-sm border-t border-accent/20 px-2">
+        <nav className="bg-[#D4B878] backdrop-blur-sm border-t border-white/20 px-2">
           <div className="flex items-stretch justify-between">
             <NavItem icon={FiHome} label="Company" href="about" isHome={isHome} />
             <NavItem icon={FiTag} label="Offers" href="offers" isHome={isHome} />

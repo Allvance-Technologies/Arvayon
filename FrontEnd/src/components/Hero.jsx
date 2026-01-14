@@ -28,9 +28,9 @@ const Hero = () => {
     return (
         <section id="home" className="relative h-[80vh] md:h-screen flex items-center justify-center overflow-hidden bg-primary">
             {/* Offer Bar - Positioned absolute at top */}
-            <div className="absolute top-0 left-0 w-full z-40 hidden md:block">
+            {/* <div className="absolute top-0 left-0 w-full z-40 hidden md:block">
                 <OfferAd />
-            </div>
+            </div> */}
 
             {/* Background Image Carousel */}
             {images.map((img, index) => (
@@ -70,12 +70,15 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase grid grid-cols-3 gap-y-2 w-full">
-                    <span className="col-span-2 col-start-1 md:col-span-1 md:col-start-1 row-start-1 text-left">Design</span>
-                    <span className="col-span-1 col-start-2 md:col-span-1 md:col-start-2 row-start-2 text-center">Beyond</span>
-                    <span className="col-span-2 col-start-2 md:col-span-1 md:col-start-3 row-start-3 text-right">Imagination</span>
+                <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase whitespace-nowrap">
+                    DESIGN BEYOND IMAGINATION
                 </h1>
-
+                <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-up delay-200">
+                    From concept planning to project execution we deliver quality-driven and cost effective building services
+                </p>
+                <div className="text-[#D4B878] text-base md:text-xl font-bold uppercase tracking-wider animate-fade-in-up delay-400">
+                    Architectural Design <span className="mx-2">||</span> Structural Design <span className="mx-2">||</span> PMC - Consulting
+                </div>
             </div>
         </section >
     );

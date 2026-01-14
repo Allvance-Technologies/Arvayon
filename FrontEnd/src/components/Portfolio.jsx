@@ -56,7 +56,7 @@ const Portfolio = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="flex justify-center mb-8">
-                        <div className="inline-block border-2 border-[#D4B878] px-6 py-2 rounded-lg">
+                        <div className="inline-block">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#D4B878] m-0">Our Portfolio</h2>
                         </div>
                     </div>

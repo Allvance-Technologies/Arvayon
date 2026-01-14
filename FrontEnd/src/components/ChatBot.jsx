@@ -4,8 +4,8 @@ const ChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="fixed  bottom-24 md:bottom-6 right-0 md:right-0 z-50 flex flex-col items-end">
-            <div className="fixed top-[30%] md:top-1/2 -translate-y-1/2 right-0 md:right-0 flex flex-col items-center md:items-end gap-2 md:gap-3 rounded-2xl md:rounded-lg px-0 py-1.5 md:px-2 md:py-2 text-white">
+        <div className="fixed  bottom-20 md:bottom-4 right-0 md:right-0 z-50 flex flex-col items-end">
+            <div className="fixed top-[50%] md:top-1/2 -translate-y-1/2 right-0 md:right-0 flex flex-col items-end gap-2 md:gap-3 rounded-2xl md:rounded-lg px-0 py-1.5 md:px-2 md:py-2 text-white">
                 <a
                     href="https://wa.me/919363035048?text=Hi%20Arvayon%2C%20I%27d%20like%20a%20free%20estimate."
                     target="_blank"
@@ -31,10 +31,10 @@ const ChatBot = () => {
                     </div>
                 </a>
 
-                {/* Free Estimate Button - Vertical on Mobile */}
-                <div className="fixed right-0 top-[250%] md:static md:w-24 md:transform-none md:rotate-0 origin-center transform rotate-[-90deg] translate-x-[34%] z-50">
+                {/* Free Estimate Button - Vertical on all screens */}
+                <div className="mt-20 md:mt-0 mr-1 md:mr-0 origin-center transform -rotate-90 md:rotate-0 translate-x-[40%] md:translate-x-0">
                     <a
-                        href="#contact"
+                        href="/#book-consultation"
                         className="block bg-[#D4B878] text-primary font-bold rounded-md shadow-lg border border-primary/20 px-3 py-1.5 text-[10px] text-center hover:scale-105 transform transition-all duration-300 whitespace-nowrap uppercase tracking-wider"
                     >
                         Free Estimate
@@ -46,7 +46,7 @@ const ChatBot = () => {
 
             {/* Pop-up Message Bubble */}
             {!isOpen && (
-                <div className="mb-2 bg-white text-primary px-3 py-2 rounded-xl rounded-br-none shadow-xl transform transition-all duration-300 animate-bounce">
+                <div className="mb-2 bg-white text-primary px-1 py-2 rounded-xl rounded-br-none shadow-xl transform transition-all duration-300 animate-bounce">
                     <p className="font-bold text-sm whitespace-nowrap">May I help you !!!!</p>
                 </div>
             )}

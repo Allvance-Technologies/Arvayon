@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaLinkedinIn, FaPinterestP, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
     return (
@@ -10,7 +10,7 @@ const Contact = () => {
                     {/* Contact Info */}
                     {/* Contact Info */}
                     <div>
-                        <div className="inline-block border-2 border-[#D4B878] px-6 py-2 rounded-lg mb-8">
+                        <div className="inline-block mb-8">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#D4B878] m-0">Get In Touch</h2>
                         </div>
 
@@ -40,6 +40,28 @@ const Contact = () => {
                                 </div>
                             </div>
 
+                            <div className="flex items-center">
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=Arvayon+Pro+Build+Studio+Ramanpudur+Nagercoil"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] mr-6 flex-shrink-0 border border-white/5 shadow-md hover:bg-[#D4B878] hover:text-primary transition-all duration-300"
+                                >
+                                    <FaMapMarkerAlt size={20} />
+                                </a>
+                                <div>
+                                    <h4 className="text-xl font-bold text-gray-800 mb-2">Location</h4>
+                                    <a
+                                        href="https://www.google.com/maps/search/?api=1&query=Arvayon+Pro+Build+Studio+Ramanpudur+Nagercoil"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-600 hover:text-[#D4B878] transition-colors duration-300"
+                                    >
+                                        Ramanpudur, Nagercoil
+                                    </a>
+                                </div>
+                            </div>
+
                             <div className="pt-6 border-t border-gray-200">
                                 <h4 className="text-xl font-bold text-gray-800 mb-6">Follow Us</h4>
                                 <div className="flex space-x-4">
@@ -61,7 +83,7 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-primary p-8 md:p-10 rounded-2xl border border-white/5 shadow-xl">
+                    <div id="book-consultation" className="bg-primary p-8 md:p-10 rounded-2xl border border-white/5 shadow-xl">
                         <h3 className="text-2xl font-bold text-white mb-6">Book Free Consultation</h3>
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
