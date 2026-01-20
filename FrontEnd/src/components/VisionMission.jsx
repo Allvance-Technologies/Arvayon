@@ -23,8 +23,7 @@ const VisionMission = () => {
                                 <h3 className="text-2xl font-bold text-primary">Our Vision</h3>
                             </div>
                             <p className="text-gray-600 text-lg leading-relaxed">
-                                To become a leading design consultancy in Tamil Nadu delivering innovative, sustainable & cost-effective solutions.
-                            </p>
+                                To provide design-driven Project Management Consultancy that unites architecture, engineering, and execution into a single, structured system.                            </p>
                         </div>
                     </div>
 
@@ -40,20 +39,8 @@ const VisionMission = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold text-primary">Our Mission</h3>
                             </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-start">
-                                    <span className="text-accent mr-2">✓</span>
-                                    <span className="text-gray-600">Complete solutions under one roof</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-accent mr-2">✓</span>
-                                    <span className="text-gray-600">Creativity with functionality</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-accent mr-2">✓</span>
-                                    <span className="text-gray-600">Transparency, quality & timely delivery</span>
-                                </li>
-                            </ul>
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                Delivering complete solutions under one roof, blending creativity with functionality, while ensuring transparency, quality, and timely delivery.</p>
                         </div>
                     </div>
                 </div>

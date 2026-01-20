@@ -1,33 +1,6 @@
 import React from 'react';
 
-const WorkprocessItem = ({ title, description, icon, isLast }) => (
-    <div className="flex flex-col items-center text-center p-6 group relative">
-        <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-[#D4B878]/30 bg-[#D4B878]/5 flex items-center justify-center mb-6 shadow-[0_0_12px_rgba(212,184,120,0.10)] group-hover:border-[#D4B878] group-hover:bg-[#D4B878]/15 group-hover:shadow-[0_0_24px_rgba(212,184,120,0.25)] transition-all duration-500 relative z-10">
-            <div className="absolute inset-2 rounded-full border border-[#D4B878]/20 animate-pulse"></div>
-            <span className="text-[#D4B878] group-hover:scale-110 transition-transform duration-500">
-                {icon}
-            </span>
-
-            {/* Connection Arrow for Desktop */}
-            {!isLast && (
-                <div className="hidden lg:block absolute top-1/2 left-24 w-48 -translate-y-1/2 z-[-1] pointer-events-none">
-                    <svg className="w-full h-16 text-[#D4B878]/40 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </div>
-            )}
-        </div>
-
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4B878] transition-colors duration-300">
-            {title}
-        </h3>
-        <p className="text-gray-400 text-sm leading-relaxed max-w-[200px]">
-            {description}
-        </p>
-    </div>
-);
-
-const Workprocess = () => {
+const Workprocess = ({ light = false }) => {
     const processItems = [
         {
             title: 'Initial Consultation',
@@ -78,7 +51,7 @@ const Workprocess = () => {
     ];
 
     return (
-        <section className="section-padding bg-primary border-t border-white/5">
+        <section className={`section-padding ${light ? 'bg-white pb-0' : 'bg-primary border-t border-white/5'}`}>
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="flex justify-center mb-6">
@@ -88,18 +61,37 @@ const Workprocess = () => {
                             </h2>
                         </div>
                     </div>
-                    <p className="text-[#D4B878] tracking-widest uppercase text-sm md:text-base font-bold">
+                    <p className={`tracking-widest uppercase text-sm md:text-base font-bold ${light ? 'text-gray-600' : 'text-[#D4B878]'}`}>
                         Project Completion in 40 Working Days
                     </p>
                 </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 md:gap-4 justify-center">
                     {processItems.map((item, index) => (
-                        <WorkprocessItem
-                            key={index}
-                            {...item}
-                            isLast={index === processItems.length - 1}
-                        />
+                        <div key={index} className="flex flex-col items-center text-center p-6 group relative">
+                            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-[#D4B878]/30 bg-[#D4B878]/5 flex items-center justify-center mb-6 shadow-[0_0_12px_rgba(212,184,120,0.10)] group-hover:border-[#D4B878] group-hover:bg-[#D4B878]/15 group-hover:shadow-[0_0_24px_rgba(212,184,120,0.25)] transition-all duration-500 relative z-10">
+                                <div className="absolute inset-2 rounded-full border border-[#D4B878]/20 animate-pulse"></div>
+                                <span className="text-[#D4B878] group-hover:scale-110 transition-transform duration-500">
+                                    {item.icon}
+                                </span>
+
+                                {/* Connection Arrow for Desktop */}
+                                {index !== processItems.length - 1 && (
+                                    <div className="hidden lg:block absolute top-1/2 left-24 w-48 -translate-y-1/2 z-[-1] pointer-events-none">
+                                        <svg className="w-full h-16 text-[#D4B878]/30 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </div>
+                                )}
+                            </div>
+
+                            <h3 className={`text-xl font-bold mb-2 group-hover:text-[#D4B878] transition-colors duration-300 ${light ? 'text-gray-900' : 'text-white'}`}>
+                                {item.title}
+                            </h3>
+                            <p className={`text-sm leading-relaxed max-w-[200px] ${light ? 'text-gray-600' : 'text-gray-400'}`}>
+                                {item.description}
+                            </p>
+                        </div>
                     ))}
                 </div>
             </div>

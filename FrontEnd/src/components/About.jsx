@@ -23,17 +23,22 @@ const About = () => {
                         We deliver end-to-end design solutions including 2D, 3D, Interior, Exterior, and Structural services across Tamil Nadu. Our team is dedicated to turning your dream spaces into reality with precision and creativity.
                     </p> 
                     */}
+                    {/* Premium PMC Tone (Chennai Villas / High-End Homes) */}
+                    
+                     <h2 className="text-gray-900 text-base leading-relaxed mb-6 font-bold">
+                        Premium PMC Tone (Chennai Villas / High-End Homes)
+                    </h2>
                     <p className="text-gray-600 text-base leading-relaxed mb-6">
-                        <span className="text-[#D4B878] font-bold">Arvayon Pro Build Studio</span> is a professional Architectural, Engineering, Interior Design, Project Management Consultancy (PMC), and Construction Services Studio based in Nagercoil, delivering projects across Tamil Nadu.
+                        <span className="text-[#D4B878] font-bold">Arvayon Pro Build Studio</span> is a design-driven Project Management Consultancy delivering refined residential and commercial projects across Tamil Nadu.
                     </p>
                     <p className="text-gray-600 text-base leading-relaxed mb-6">
-                        We offer end-to-end building solutions, including architectural planning, structural engineering, interior & exterior design, PMC services, and construction execution. Our work is supported by an experienced in-house team of architects, engineers, and project professionals, ensuring seamless coordination at every stage.
+                        Our practice is built around the belief that architecture, engineering, and execution must operate as a single, well-controlled system. Through structured PMC processes, we provide clients with complete visibility over cost, quality, and progress—at every stage of construction.
                     </p>
                     <p className="text-gray-600 text-base leading-relaxed mb-8">
-                        By focusing on transparent pricing, structured project management, quality control, and timely delivery, Arvayon Pro Build Studio helps clients execute residential and commercial projects with confidence, clarity, and accountability.
+                        With an experienced multidisciplinary team and a transparent working methodology, we ensure that each project is executed with precision, accountability, and long-term value.
                     </p>
 
-                    <div className="md:col-span-2 space-y-6">
+                    {/* <div className="md:col-span-2 space-y-6">
                         {[
                             {
                                 title: 'End-to-End Design Solutions',
@@ -73,9 +78,9 @@ const About = () => {
                                         {benefit.description}
                                     </p>
                                 </div>
-                            </div>
+                            </div>   
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { servicesData } from '../components/Services';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { CheckCircle2, ArrowRight, ShieldCheck, Zap } from 'lucide-react';
 
 const ServiceDetail = () => {
     const { id } = useParams();
@@ -13,7 +14,7 @@ const ServiceDetail = () => {
             <div className="bg-primary min-h-screen text-white flex items-center justify-center">
                 <div className="text-center">
                     <h2 className="text-4xl font-bold mb-4">Service Not Found</h2>
-                    <Link to="/" className="text-accent underline">Return Home</Link>
+                    <Link to="/" className="text-[#D4B878] underline">Return Home</Link>
                 </div>
             </div>
         );
@@ -23,78 +24,96 @@ const ServiceDetail = () => {
         <div className="bg-primary min-h-screen text-white">
             <Navbar />
 
-            {/* Hero Section for Service */}
-            <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+            {/* Hero Section */}
+            <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={service.image}
                         alt={service.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover scale-105 animate-slow-zoom"
                     />
-                    <div className="absolute inset-0 bg-primary/70"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
                 </div>
-                <div className="relative z-10 text-center px-4">
-                    <h1 className="text-4xl md:text-6xl font-black text-white mb-6 animate-fade-in-up">
-                        {service.title}
-                    </h1>
-                    <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Professional, high-quality, and reliable {service.title} services.
-                    </p>
+
+                <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+                    <div className="max-w-3xl">
+                        <div className="inline-block px-4 py-1 bg-[#D4B878]/20 text-[#D4B878] text-xs font-black uppercase tracking-[0.3em] rounded-full mb-6">
+                            Arvayon Solutions
+                        </div>
+                        <h1 className="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-8">
+                            {service.title.split(' ').map((word, i) => (
+                                <span key={i} className={i === 0 ? "block" : "block text-[#D4B878]"}>{word} </span>
+                            ))}
+                        </h1>
+                        <p className="text-xl text-gray-300 font-medium leading-relaxed max-w-xl">
+                            {service.shortDesc}
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            {/* Service Content */}
-            <section className="py-20 bg-secondary">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <h2 className="text-3xl font-bold mb-6 text-accent">About This Service</h2>
-                            <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-                                {service.description}
-                            </p>
-                            <p className="text-gray-400 mb-8">
-                                At Arvayon Pro Build Studio, we ensure that every aspect of {service.title} is handled with precision and care.
-                                Our team of experts utilizes the latest technology and standards to deliver exceptional results.
-                            </p>
+            {/* Main Content */}
+            <section className="py-24 bg-white text-gray-900 border-t-8 border-[#D4B878]">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
-                            <div className="bg-primary p-6 rounded-xl border border-white/5">
-                                <h3 className="text-xl font-bold mb-4 border-b border-white/10 pb-2">Key Features</h3>
-                                <ul className="space-y-3">
-                                    {service.details && service.details.length > 0 ? (
-                                        service.details.map((detail, idx) => (
-                                            <li key={idx} className="flex items-center text-gray-300">
-                                                <svg className="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                                                </svg>
-                                                {detail}
-                                            </li>
-                                        ))
-                                    ) : (
-                                        <li className="text-gray-400 italic">Customized solutions tailored to your needs.</li>
-                                    )}
+                        {/* Sidebar/Quick Info */}
+                        <div className="lg:col-span-4 space-y-8">
+                            <div className="p-8 bg-gray-50 border-l-4 border-[#D4B878] rounded-r-2xl">
+                                <h3 className="text-sm font-black uppercase tracking-widest text-gray-400 mb-6">Service Overview</h3>
+                                <p className="text-gray-700 font-medium text-lg leading-relaxed">
+                                    {service.overview}
+                                </p>
+                            </div>
+
+                            <div className="p-8 bg-gray-900 text-white rounded-3xl shadow-2xl relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <ShieldCheck className="w-20 h-20" />
+                                </div>
+                                <h3 className="text-[#D4B878] text-xl font-black uppercase mb-6 tracking-tighter">Why Choose Us?</h3>
+                                <ul className="space-y-4">
+                                    {service.benefits.map((benefit, idx) => (
+                                        <li key={idx} className="flex items-start gap-3">
+                                            <Zap className="w-5 h-5 text-[#D4B878] mt-1 shrink-0" />
+                                            <span className="font-bold text-sm tracking-tight">{benefit}</span>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="relative">
-                            <img
-                                src={service.image}
-                                alt={service.title}
-                                className="rounded-2xl shadow-2xl border-4 border-accent/20"
-                            />
-                            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full -z-10 opacity-20"></div>
-                            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary rounded-full -z-10 border border-white/10"></div>
+                        {/* Detailed Offerings */}
+                        <div className="lg:col-span-8">
+                            <h2 className="text-4xl font-black uppercase tracking-tighter mb-12 flex items-center gap-4">
+                                What We Offer
+                                <div className="h-px bg-gray-200 flex-grow"></div>
+                            </h2>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {service.offerings.map((offering, idx) => (
+                                    <div key={idx} className="p-8 border border-gray-100 rounded-2xl hover:bg-[#FDFBF7] hover:border-[#D4B878]/30 transition-all duration-300 group">
+                                        <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-[#D4B878] group-hover:text-white transition-colors">
+                                            <CheckCircle2 className="w-6 h-6" />
+                                        </div>
+                                        <h4 className="text-xl font-black uppercase tracking-tight text-gray-900 mb-2">{offering}</h4>
+                                        <p className="text-gray-500 text-sm font-medium">Expert execution ensuring the highest standards of delivery.</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="mt-16 p-10 bg-[#D4B878] rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8">
+                                <div>
+                                    <h3 className="text-3xl font-black uppercase tracking-tighter text-gray-900 leading-tight">Ready to build <br /> your vision?</h3>
+                                    <p className="text-gray-900/70 font-bold mt-2 font-medium">Get a professional consultation today.</p>
+                                </div>
+                                <Link to="/#book-consultation" className="px-10 py-5 bg-gray-900 text-white font-black uppercase tracking-widest hover:bg-white hover:text-gray-900 transition-all shadow-xl flex items-center gap-3">
+                                    Get a Quote
+                                    <ArrowRight className="w-5 h-5" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section className="py-16 bg-primary text-center">
-                <h2 className="text-3xl font-bold mb-8">Ready to Start?</h2>
-                <Link to="/contact" className="btn-primary inline-block px-10 py-4 text-lg">
-                    Get a Quote for {service.title}
-                </Link>
             </section>
 
             <Footer />

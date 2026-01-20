@@ -74,14 +74,12 @@ const Hero = () => {
                     DESIGN BEYOND IMAGINATION
                 </h1>
                 <p className="text-gray-250 text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-up delay-200">
-                    From concept planning to project execution we deliver quality-driven and cost effective building services
-                </p>
-                <div className="text-[#D4B878] text-base md:text-xl font-bold uppercase tracking-wider animate-fade-in-up delay-400">
-                    Architectural Design <span className="mx-2">||</span> Structural Design <span className="mx-2">||</span> PMC - Consulting
+From concept planning to disciplined project execution, we deliver transparent, quality-driven building solutions through structured PMC systems.                </p>
+                <div className="text-[#D4B878] text-base md:text-xl font-bold uppercase tracking-wider animate-fade-in-up delay-400">PROJECT MANAGEMENT CONSULTANCY (PMC) ||Architectural Design <span className="mx-2">||</span> Structural Design    
                 </div>
             </div>
         </section >
     );
-};
+}
 
 export default Hero;

@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: 'Home', href: 'home' },
         { name: 'About', href: 'about' },
         { name: 'Services', href: 'services' },
-        { name: 'Portfolio', href: 'portfolio' },
+        { name: 'Projects', href: 'portfolio' },
         { name: 'Contact', href: 'contact' },
     ];
 
@@ -28,19 +28,6 @@ const Navbar = () => {
                                 <img src={logo} alt="ARVAYON Pro Build Studio" className="h-[11rem] w-auto object-contain transform scale-150" />
                             </Link>
 
-                            {/* Mobile Offer Marquee */}
-                            {isHomePage && (
-                                <div className="md:hidden flex-1 overflow-hidden h-6 flex items-center relative mask-image-linear-to-r">
-                                    <div className="animate-marquee whitespace-nowrap inline-flex items-center">
-                                        <span className="text-accent text-[10px] font-bold tracking-widest px-4">
-                                            GET <span className="text-white px-1 bg-primary/30 rounded mx-1">40% OFF</span> ON PREMIUM INTERIORS
-                                        </span>
-                                        <span className="text-accent text-[10px] font-bold tracking-widest px-4">
-                                            GET <span className="text-white px-1 bg-primary/30 rounded mx-1">40% OFF</span> ON PREMIUM INTERIORS
-                                        </span>
-                                    </div>
-                                </div>
-                            )}
                         </div>
 
                         <div className="hidden md:block">

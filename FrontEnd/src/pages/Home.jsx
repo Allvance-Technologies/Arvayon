@@ -10,7 +10,6 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import Workprocess from '../components/Workprocess';
 
 const Home = () => {
     return (
@@ -18,16 +17,11 @@ const Home = () => {
             <Navbar />
             <div className="pt-20">
                 <Hero />
-
                 <About />
                 <VisionMission />
-                {/* ProjectScroll moved to Hero background */}
-                <Services />
                 <PMCServices />
-                <Workprocess />
-                {/* Workflow removed */}
-                {/* Packages section removed as per request */}
-                {/* <WhyChooseUs /> */}
+                <Services />
+                {/* Workprocess moved inside PMCServices */}
                 <Portfolio />
                 <Contact />
                 <Footer />

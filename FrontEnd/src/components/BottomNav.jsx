@@ -61,7 +61,7 @@ const BottomNav = () => {
           <div className="flex items-stretch justify-between">
             <NavItem icon={FiHome} label="Company" href="about" isHome={isHome} />
             <NavItem icon={FiTag} label="Offers" href="offers" isHome={isHome} />
-            <NavItem icon={FiImage} label="Gallery" href="portfolio" isHome={isHome} />
+            <NavItem icon={FiImage} label="Projects" href="portfolio" isHome={isHome} />
             <NavItem icon={FiPhone} label="Contact" href="contact" isHome={isHome} />
           </div>
         </nav>
