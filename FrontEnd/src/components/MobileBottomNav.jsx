@@ -54,7 +54,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
                     >
                         <div className="w-20 h-20 rounded-full bg-[#D4B878] flex items-center justify-center border-4 border-[#D4B878] shadow-[0_0_15px_rgba(0,0,0,0.2)]">
                             <div className="w-[72px] h-[72px] rounded-full overflow-hidden border border-white/40 bg-white flex items-center justify-center">
-                                <img src={logoIcon} alt="ARVAYON" className="w-full h-full object-cover scale-125 translate-x-1.5" />
+                                <img src={logoIcon} alt="ARVAYON" className="w-full h-full object-cover scale-120 translate-x-.5" />
                             </div>
                         </div>
                     </Link>
