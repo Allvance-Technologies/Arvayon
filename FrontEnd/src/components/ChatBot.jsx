@@ -4,7 +4,7 @@ const ChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="fixed  bottom-20 md:bottom-4 right-0 md:right-0 z-50 flex flex-col items-end">
+        <div className="fixed  bottom-20 md:bottom-1 right-0 md:right-0 z-50 flex flex-col items-end">
             <div className="fixed top-[50%] md:top-1/2 -translate-y-1/2 right-0 md:right-0 flex flex-col items-end gap-2 md:gap-3 rounded-2xl md:rounded-lg px-0 py-1.5 md:px-2 md:py-2 text-white">
                 <a
                     href="https://wa.me/919363035048?text=Hi%20Arvayon%2C%20I%27d%20like%20a%20free%20estimate."

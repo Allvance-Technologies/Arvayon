@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+
 
 const ContactPage = () => {
     return (
@@ -10,7 +10,7 @@ const ContactPage = () => {
             <div className="pt-24">
                 <Contact />
             </div>
-            <Footer />
+
         </div>
     );
 };

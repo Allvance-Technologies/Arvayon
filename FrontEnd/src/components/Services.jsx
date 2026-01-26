@@ -16,8 +16,7 @@ export const servicesData = [
             'Budget and cost management',
             'Schedule and timeline supervision',
             'Quality control at every stage',
-            'Vendor and contractor coordination',
-            'Progress tracking with regular reports'
+            'Vendor and contractor coordination'
         ],
         benefits: [
             'Reduced cost overruns',
@@ -39,7 +38,7 @@ export const servicesData = [
             '2D & 3D design visualization',
             'Interior and exterior design concepts',
             'Government-approved plan submission',
-            'Design revisions based on client feedback'
+
         ],
         benefits: [
             'Unique, functional spaces',
@@ -60,7 +59,7 @@ export const servicesData = [
             'Foundation and framing design',
             'Seismic and load compliance',
             'Material specification and calculation',
-            'Collaboration with architects for integrated designs'
+
         ],
         benefits: [
             'Safe and durable structures',
@@ -81,7 +80,7 @@ export const servicesData = [
             'Liaising with municipal authorities',
             'Compliance checks for regulations and codes',
             'Fast-track approval assistance',
-            'Updates and guidance throughout the process'
+
         ],
         benefits: [
             'Avoid delays due to legal or regulatory issues',
