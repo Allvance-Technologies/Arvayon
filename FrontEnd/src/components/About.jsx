@@ -26,7 +26,7 @@ const About = () => {
                     {/* Premium PMC Tone (Chennai Villas / High-End Homes) */}
 
                     <p className="text-gray-600 text-base leading-relaxed mb-6">
-                        <span className="text-[#D4B878] font-bold">Arvayon Pro Build Studio</span> is a design-driven Project Management Consultancy delivering refined residential and commercial projects across Tamil Nadu.
+                        <span className="text-[#9A7B3C] font-bold">Arvayon Pro Build Studio</span> is a design-driven Project Management Consultancy delivering refined residential and commercial projects across Tamil Nadu.
                     </p>
                     <p className="text-gray-600 text-base leading-relaxed mb-6">
                         Our practice is built around the belief that architecture, engineering, and execution must operate as a single, well-controlled system. Through structured PMC processes, we provide clients with complete visibility over cost, quality, and progress—at every stage of construction.

@@ -155,7 +155,7 @@ const PMCServices = () => {
                 {/* Problem Awareness Section - Reverted to Card + Image Style */}
                 <div className="mb-24">
                     <div className="text-center mb-12">
-                        <h3 className="text-2xl font-bold uppercase tracking-widest text-[#D4B878] mb-2">The Reality Check</h3>
+                        <h3 className="text-2xl font-bold uppercase tracking-widest text-[#9A7B3C] mb-2">The Reality Check</h3>
                         <p className="text-3xl md:text-5xl font-bold text-gray-900 uppercase">Why Most Construction Projects Fail</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -189,7 +189,7 @@ const PMCServices = () => {
                         <h3 className="text-3xl font-bold text-gray-900 mb-6">What is Project Management Consultancy?</h3>
                         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                             <p>
-                                <span className="font-bold text-[#D4B878]">PMC</span> is a professional system where your project is planned, monitored, and controlled from design finalization to handover.
+                                <span className="font-bold text-[#9A7B3C]">PMC</span> is a professional system where your project is planned, monitored, and controlled from design finalization to handover.
                             </p>
                             <p>
                                 PMC works in the <span className="italic font-medium">client’s best interest</span>, ensuring cost control, quality assurance, and timeline discipline.
