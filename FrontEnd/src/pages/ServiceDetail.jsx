@@ -57,28 +57,30 @@ const ServiceDetail = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
-                        {/* Sidebar/Quick Info */}
-                        <div className="lg:col-span-4 space-y-8">
-                            <div className="p-8 bg-gray-50 border-l-4 border-[#D4B878] rounded-r-2xl">
-                                <h3 className="text-sm font-black uppercase tracking-widest text-gray-400 mb-6">Service Overview</h3>
-                                <p className="text-gray-700 font-medium text-lg leading-relaxed">
-                                    {service.overview}
-                                </p>
-                            </div>
-
-                            <div className="p-8 bg-gray-900 text-white rounded-3xl shadow-2xl relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                                    <ShieldCheck className="w-20 h-20" />
+                        {/* Sidebar/Quick Info - positioned at bottom to align with CTA */}
+                        <div className="lg:col-span-4 flex flex-col justify-end">
+                            <div className="space-y-8">
+                                <div className="p-8 bg-gray-50 border-l-4 border-[#D4B878] rounded-r-2xl">
+                                    <h3 className="text-sm font-black uppercase tracking-widest text-gray-400 mb-6">Service Overview</h3>
+                                    <p className="text-gray-700 font-medium text-lg leading-relaxed">
+                                        {service.overview}
+                                    </p>
                                 </div>
-                                <h3 className="text-[#D4B878] text-xl font-black uppercase mb-6 tracking-tighter">Why Choose Us?</h3>
-                                <ul className="space-y-4">
-                                    {service.benefits.map((benefit, idx) => (
-                                        <li key={idx} className="flex items-start gap-3">
-                                            <Zap className="w-5 h-5 text-[#D4B878] mt-1 shrink-0" />
-                                            <span className="font-bold text-sm tracking-tight">{benefit}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+
+                                <div className="p-8 bg-gray-900 text-white rounded-3xl shadow-2xl relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                        <ShieldCheck className="w-20 h-20" />
+                                    </div>
+                                    <h3 className="text-[#D4B878] text-xl font-black uppercase mb-6 tracking-tighter">Why Choose Us?</h3>
+                                    <ul className="space-y-4">
+                                        {service.benefits.map((benefit, idx) => (
+                                            <li key={idx} className="flex items-start gap-3">
+                                                <Zap className="w-5 h-5 text-[#D4B878] mt-1 shrink-0" />
+                                                <span className="font-bold text-sm tracking-tight">{benefit}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
