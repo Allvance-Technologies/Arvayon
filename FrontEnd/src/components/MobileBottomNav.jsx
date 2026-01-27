@@ -19,6 +19,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
                             if (element) element.scrollIntoView({ behavior: 'auto' });
                         }
                     }}
+                    aria-label="Go to Company section"
                     className="flex flex-col items-center justify-center h-full text-primary hover:text-white transition-colors group w-full"
                 >
                     <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,6 +38,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
                             if (element) element.scrollIntoView({ behavior: 'auto' });
                         }
                     }}
+                    aria-label="Go to Services section"
                     className="flex flex-col items-center justify-center h-full text-primary hover:text-white transition-colors group w-full"
                 >
                     <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,6 +72,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
                             if (element) element.scrollIntoView({ behavior: 'auto' });
                         }
                     }}
+                    aria-label="Go to Projects section"
                     className="flex flex-col items-center justify-center h-full text-primary hover:text-white transition-colors group w-full"
                 >
                     <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,6 +92,7 @@ const MobileBottomNav = ({ onMenuClick }) => {
                             if (element) element.scrollIntoView({ behavior: 'auto' });
                         }
                     }}
+                    aria-label="Go to Contact section"
                     className="flex flex-col items-center justify-center h-full text-primary hover:text-white transition-colors group w-full"
                 >
                     <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

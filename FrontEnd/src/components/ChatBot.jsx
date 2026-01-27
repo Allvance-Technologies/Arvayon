@@ -134,7 +134,7 @@ const ChatBot = () => {
                                 <p className="text-accent text-xs">Online</p>
                             </div>
                         </div>
-                        <button onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-white">
+                        <button onClick={() => setIsOpen(false)} aria-label="Close chat" className="text-gray-400 hover:text-white">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -190,7 +190,7 @@ const ChatBot = () => {
                                 value={inputValue}
                                 onChange={(e) => setInputValue(e.target.value)}
                             />
-                            <button type="submit" className={`text-primary ${!inputValue.trim() ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#D4B878]'}`}>
+                            <button type="submit" aria-label="Send message" className={`text-primary ${!inputValue.trim() ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#D4B878]'}`}>
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                                 </svg>
@@ -203,6 +203,7 @@ const ChatBot = () => {
             {/* Toggle Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle chatbot"
                 className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_12px_rgba(0,0,0,0.45)] transform transition-transform duration-300 hover:scale-110 focus:outline-none pointer-events-auto mr-2 md:mr-0"
             >
                 {isOpen ? (
