@@ -58,8 +58,8 @@ const ServiceDetail = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
                         {/* Sidebar/Quick Info - stretched to align top and bottom with right column */}
-                        <div className="lg:col-span-4 flex flex-col justify-between h-full">
-                            {/* Top - Service Overview */}
+                        <div className="lg:col-span-4 flex flex-col justify-between h-full lg:pt-[76px]">
+                            {/* Top - Service Overview (pt-[76px] aligns with offering boxes after h2) */}
                             <div className="p-8 bg-gray-50 border-l-4 border-[#D4B878] rounded-r-2xl">
                                 <h3 className="text-sm font-black uppercase tracking-widest text-gray-400 mb-6">Service Overview</h3>
                                 <p className="text-gray-700 font-medium text-lg leading-relaxed">
