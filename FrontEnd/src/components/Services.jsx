@@ -94,7 +94,7 @@ export const servicesData = [
 
 const Services = () => {
     return (
-        <section id="services" className="section-padding bg-[#FDFBF7]">
+        <section id="services" className="pt-4 pb-16 md:py-16 bg-[#FDFBF7]">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex justify-center mb-8">
