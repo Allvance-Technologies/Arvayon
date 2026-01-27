@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import heroBg from '../assets/hero-bg.png';
-import projectPlanning from '../assets/project-planning.png';
-import projectDesigning from '../assets/project-designing.png';
-import projectBuilding from '../assets/project-building.png';
+import heroBg from '../assets/hero-bg.webp';
+import projectPlanning from '../assets/project-planning.webp';
+import projectDesigning from '../assets/project-designing.webp';
+import projectBuilding from '../assets/project-building.webp';
 
 import OfferAd from './OfferAd';
 

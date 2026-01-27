@@ -1,4 +1,4 @@
-import logo from '../assets/logo-cropped.png';
+import logo from '../assets/logo-cropped.webp';
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import MobileBottomNav from './MobileBottomNav';

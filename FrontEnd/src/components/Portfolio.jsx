@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import portfolio1 from '../assets/portfolio-1.png';
-import portfolio2 from '../assets/portfolio-2.png';
-import heroBg from '../assets/hero-bg.png';
-import brochureHero from '../assets/brochure-hero.jpg';
-import projectBuilding from '../assets/project-building.png';
-import serviceInteriorNew from '../assets/service-interior-new.png';
+import portfolio1 from '../assets/portfolio-1.webp';
+import portfolio2 from '../assets/portfolio-2.webp';
+import heroBg from '../assets/hero-bg.webp';
+import brochureHero from '../assets/brochure-hero.webp';
+import projectBuilding from '../assets/project-building.webp';
+import serviceInteriorNew from '../assets/service-interior-new.webp';
 
 const Portfolio = () => {
     const projects = [

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import pmcImg from '../assets/service-pmc-consulting.png';
-import archImg from '../assets/service-3d-new.png';
-import structImg from '../assets/service-structural.png';
-import approvalImg from '../assets/service-approval.png';
+import pmcImg from '../assets/service-pmc-consulting.webp';
+import archImg from '../assets/service-3d-new.webp';
+import structImg from '../assets/service-structural.webp';
+import approvalImg from '../assets/service-approval.webp';
 
 export const servicesData = [
     {

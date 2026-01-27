@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logoIcon from '../assets/logo-icon.jpg';
+import logoIcon from '../assets/logo-icon.webp';
 
 const MobileBottomNav = ({ onMenuClick }) => {
     const location = useLocation();

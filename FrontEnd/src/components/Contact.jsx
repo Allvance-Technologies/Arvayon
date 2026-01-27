@@ -47,6 +47,7 @@ const Contact = () => {
                                         href="https://www.google.com/maps/search/?api=1&query=Arvayon+Pro+Build+Studio+Ramanpudur+Nagercoil"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="View on Google Maps"
                                         className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] mr-4 flex-shrink-0 border border-white/5 shadow-md hover:bg-[#D4B878] hover:text-primary transition-all duration-300"
                                     >
                                         <FaMapMarkerAlt size={16} />
@@ -67,16 +68,16 @@ const Contact = () => {
                                 <div className="pt-4 border-t border-gray-200">
                                     <h4 className="text-lg font-bold text-gray-800 mb-3">Follow Us</h4>
                                     <div className="flex space-x-3">
-                                        <a href="#" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                        <a href="#" aria-label="Instagram" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaInstagram size={16} />
                                         </a>
-                                        <a href="#" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                        <a href="#" aria-label="Facebook" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaFacebookF size={16} />
                                         </a>
-                                        <a href="#" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                        <a href="#" aria-label="LinkedIn" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaLinkedinIn size={16} />
                                         </a>
-                                        <a href="#" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                        <a href="#" aria-label="Pinterest" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaPinterestP size={16} />
                                         </a>
                                     </div>

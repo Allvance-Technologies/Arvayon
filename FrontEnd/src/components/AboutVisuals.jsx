@@ -1,7 +1,7 @@
 import React from 'react';
-import aboutGrid1 from '../assets/about-grid-1.png';
-import aboutGrid2 from '../assets/about-grid-2.png';
-import aboutGrid3 from '../assets/about-grid-3.png';
+import aboutGrid1 from '../assets/about-grid-1.webp';
+import aboutGrid2 from '../assets/about-grid-2.webp';
+import aboutGrid3 from '../assets/about-grid-3.webp';
 
 const AboutVisuals = () => {
     return (

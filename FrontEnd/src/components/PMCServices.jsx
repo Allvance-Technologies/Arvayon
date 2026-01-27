@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import pmcCostLeakage from '../assets/pmc-cost-leakage.png';
-import pmcContractorControl from '../assets/pmc-contractor-control.png';
-import pmcQualityInspection from '../assets/pmc-quality-inspection.png';
-import pmcTimelineSchedule from '../assets/pmc-timeline-schedule.png';
+import pmcCostLeakage from '../assets/pmc-cost-leakage.webp';
+import pmcContractorControl from '../assets/pmc-contractor-control.webp';
+import pmcQualityInspection from '../assets/pmc-quality-inspection.webp';
+import pmcTimelineSchedule from '../assets/pmc-timeline-schedule.webp';
 import {
     ShieldCheck,
     Compass,
