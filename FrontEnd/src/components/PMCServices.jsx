@@ -30,8 +30,8 @@ const PMCServices = () => {
                 setIsButtonVisible(entry.isIntersecting);
             },
             {
-                threshold: 0,
-                rootMargin: "-100px 0px -100px 0px"
+                threshold: 0.15,
+                rootMargin: "-150px 0px -150px 0px"
             }
         );
 

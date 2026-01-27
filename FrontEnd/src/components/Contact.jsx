@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaLinkedinIn, FaPinteres
 const Contact = () => {
     return (
         <>
-            <section id="contact" className="pt-20 pb-12 bg-white relative scroll-mt-20">
+            <section id="contact" className="pt-20 pb-12 bg-white relative">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Contact Info */}
