@@ -61,9 +61,7 @@ const Workprocess = ({ light = false }) => {
                             </h2>
                         </div>
                     </div>
-                    <p className={`tracking-widest uppercase text-sm md:text-base font-bold ${light ? 'text-gray-600' : 'text-[#D4B878]'}`}>
-                        Project Completion in 40 Working Days
-                    </p>
+
                 </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 md:gap-4 justify-center">

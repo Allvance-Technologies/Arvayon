@@ -71,7 +71,7 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase">
+                <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up uppercase whitespace-nowrap">
                     DESIGN BEYOND IMAGINATION
                 </h1>
                 <p className="text-gray-250 text-lg md:text-xl lg:text-2xl mb-8 max-w-5xl mx-auto animate-fade-in-up delay-200">

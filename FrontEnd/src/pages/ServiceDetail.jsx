@@ -91,7 +91,7 @@ const ServiceDetail = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {service.offerings.map((offering, idx) => (
-                                    <div key={idx} className="p-8 border border-gray-100 rounded-2xl hover:bg-[#FDFBF7] hover:border-[#D4B878]/30 transition-all duration-300 group">
+                                    <div key={idx} className="p-8 border border-gray-100 rounded-2xl hover:bg-[#FDFBF7] hover:border-[#D4B878]/30 transition-all duration-300 group min-h-[160px] flex flex-col justify-start">
                                         <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-[#D4B878] group-hover:text-white transition-colors">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
