@@ -52,7 +52,7 @@ const Workprocess = ({ light = false }) => {
 
     return (
         <section className={`section-padding ${light ? 'bg-white pb-0' : 'bg-primary border-t border-white/5'}`}>
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex justify-center mb-6">
                         <div className="inline-block">

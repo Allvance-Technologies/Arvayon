@@ -53,7 +53,7 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio" className="section-padding bg-white">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex justify-center mb-8">
                         <div className="inline-block">
