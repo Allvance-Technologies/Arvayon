@@ -8,12 +8,15 @@ const ScrollToTop = () => {
     useEffect(() => {
         if (hash) {
             const id = hash.replace('#', '');
-            setTimeout(() => {
+            const scrollToElement = (attempt = 0) => {
                 const element = document.getElementById(id);
                 if (element) {
-                    element.scrollIntoView({ behavior: 'auto' });
+                    element.scrollIntoView({ behavior: 'smooth' });
+                } else if (attempt < 5) {
+                    setTimeout(() => scrollToElement(attempt + 1), 200);
                 }
-            }, 100);
+            };
+            setTimeout(() => scrollToElement(), 100);
         } else if (navType !== 'POP') {
             window.scrollTo(0, 0);
         }
