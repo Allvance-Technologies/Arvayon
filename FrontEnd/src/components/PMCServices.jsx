@@ -53,12 +53,12 @@ const PMCServices = () => {
 
     const failures = [
         {
-            title: 'Cost Leakages',
+            title: 'Hidden Project Costs',
             desc: 'Poor planning and uncontrolled decisions inflate budgets.',
             image: pmcCostLeakage
         },
         {
-            title: 'Contractor Dependency',
+            title: 'Restricted Material Choices',
             desc: 'Clients lose control when contractors manage everything.',
             image: pmcContractorControl
         },
@@ -155,8 +155,7 @@ const PMCServices = () => {
                 {/* Problem Awareness Section - Reverted to Card + Image Style */}
                 <div className="mb-24">
                     <div className="text-center mb-12">
-                        <h3 className="text-2xl font-bold uppercase tracking-widest text-[#9A7B3C] mb-2">The Reality Check</h3>
-                        <p className="text-3xl md:text-5xl font-bold text-gray-900 uppercase">Why Most Construction Projects Fail</p>
+                        <p className="text-3xl md:text-5xl font-bold text-gray-900 uppercase">The Reaity of Construction Project Risks</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {failures.map((item, idx) => (
