@@ -21,7 +21,7 @@ const ServiceDetail = () => {
     }
 
     return (
-        <div className="bg-primary min-h-screen text-white">
+        <div className="bg-primary min-h-screen text-white pb-20 md:pb-0">
             <Navbar />
 
             {/* Hero Section */}
@@ -53,7 +53,7 @@ const ServiceDetail = () => {
             </div>
 
             {/* Main Content */}
-            <section className="py-24 bg-white text-gray-900 border-t-8 border-[#D4B878]">
+            <section className="py-12 bg-white text-gray-900 border-t-8 border-[#D4B878]">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 

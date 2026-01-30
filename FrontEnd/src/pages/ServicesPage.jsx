@@ -7,14 +7,14 @@ import SEO from '../components/SEO';
 
 const ServicesPage = () => {
     return (
-        <div className="bg-primary min-h-screen text-white">
+        <div className="bg-primary min-h-screen text-white pb-24 md:pb-0">
             <SEO
                 title="Our Services | Project Management Consultancy | Civil Works | Nagercoil"
                 description="Comprehensive construction services including Project Management Consultancy (PMC), Architectural Design, Structural Engineering, and Turnkey Civil Contracts."
                 url="/services"
             />
             <Navbar />
-            <div className="pt-20 md:pt-24">
+            <div className="pt-16 md:pt-20">
                 <Services />
             </div>
             <Footer />

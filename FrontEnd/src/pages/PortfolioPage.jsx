@@ -7,14 +7,14 @@ import SEO from '../components/SEO';
 
 const PortfolioPage = () => {
     return (
-        <div className="bg-primary min-h-screen text-white">
+        <div className="bg-primary min-h-screen text-white pb-20 md:pb-0">
             <SEO
                 title="Our Portfolio | Recent Construction Projects in Nagercoil"
                 description="Explore our portfolio of completed residential and commercial projects. See the quality and craftsmanship that defines Arvayon Pro Build Studio."
                 url="/portfolio"
             />
             <Navbar />
-            <div className="pt-20 md:pt-24">
+            <div className="pt-16 md:pt-20">
                 <Portfolio />
             </div>
             <Footer />
