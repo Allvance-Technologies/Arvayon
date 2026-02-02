@@ -14,6 +14,7 @@ const Footer = () => {
                     <div className="flex space-x-6 text-sm text-black font-medium">
                         <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+
                     </div>
                 </div>
             </div>
