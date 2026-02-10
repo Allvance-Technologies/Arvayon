@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaPinterestP } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
@@ -45,7 +45,7 @@ const Contact = () => {
 
                                 <div className="flex items-center">
                                     <a
-                                        href="https://www.google.com/maps/search/?api=1&query=Arvayon+Pro+Build+Studio+Ramanpudur+Nagercoil"
+                                        href="https://maps.app.goo.gl/vgXRKxLE2DnGyjvz7"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         aria-label="View on Google Maps"
@@ -56,7 +56,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="text-lg font-bold text-gray-800 mb-0">Location</h3>
                                         <a
-                                            href="https://www.google.com/maps/search/?api=1&query=Arvayon+Pro+Build+Studio+Ramanpudur+Nagercoil"
+                                            href="https://maps.app.goo.gl/vgXRKxLE2DnGyjvz7"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-gray-600 hover:text-[#D4B878] transition-colors duration-300 text-sm"
@@ -78,8 +78,9 @@ const Contact = () => {
                                         <a href="https://share.google/t8K1KTRtdS2zz6yKU" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaLinkedinIn size={16} />
                                         </a>
-                                        <a href="https://wa.me/919363035048" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
-                                            <FaWhatsapp size={16} />
+
+                                        <a href="https://pin.it/1OiOzDL0E" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                            <FaPinterestP size={16} />
                                         </a>
                                     </div>
                                 </div>

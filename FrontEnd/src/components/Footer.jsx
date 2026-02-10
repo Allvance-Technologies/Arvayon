@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaPinterestP } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -24,6 +24,9 @@ const Footer = () => {
                             </a>
                             <a href="https://wa.me/919363035048" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
                                 <FaWhatsapp size={18} />
+                            </a>
+                            <a href="https://pin.it/1OiOzDL0E" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
+                                <FaPinterestP size={18} />
                             </a>
                         </div>
                     </div>

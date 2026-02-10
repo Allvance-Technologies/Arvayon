@@ -66,7 +66,7 @@ export const faqData = [
 const websiteContent = [
     {
         keywords: ['location', 'address', 'where', 'situated'],
-        answer: "We are located at Ramanpudur, Nagercoil. However, we deliver projects across Tamil Nadu."
+        answer: "We are located at Ramanpudur, Nagercoil. You can find us on Google Maps here: https://maps.app.goo.gl/vgXRKxLE2DnGyjvz7"
     },
     {
         keywords: ['contact', 'phone', 'number', 'mobile', 'call', 'email', 'reach'],
