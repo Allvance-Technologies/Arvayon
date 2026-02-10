@@ -72,7 +72,7 @@ const Contact = () => {
                                         <a href="https://www.instagram.com/arvayon_pro_build_studio?igsh=MXFuanJsOHZkcTl1cg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaInstagram size={16} />
                                         </a>
-                                        <a href="https://www.facebook.com/share/1GMM1sASAH/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
+                                        <a href="https://www.facebook.com/profile.php?id=61581557212884" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">
                                             <FaFacebookF size={16} />
                                         </a>
                                         <a href="https://share.google/t8K1KTRtdS2zz6yKU" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-[#D4B878] hover:bg-[#D4B878] hover:text-primary transition-all duration-300 border border-white/5 shadow-md group">

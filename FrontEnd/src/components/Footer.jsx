@@ -16,7 +16,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/arvayon_pro_build_studio?igsh=MXFuanJsOHZkcTl1cg==" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
                                 <FaInstagram size={18} />
                             </a>
-                            <a href="https://www.facebook.com/share/1GMM1sASAH/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
+                            <a href="https://www.facebook.com/profile.php?id=61581557212884" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
                                 <FaFacebookF size={18} />
                             </a>
                             <a href="https://share.google/t8K1KTRtdS2zz6yKU" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white transition-colors">
