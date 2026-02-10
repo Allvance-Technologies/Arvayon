@@ -11,14 +11,14 @@ const TermsPage = () => {
             />
             <Navbar />
 
-            <main className="pt-20 md:pt-32 pb-20">
+            <main className="pt-28 md:pt-40 pb-20">
                 <div className="max-w-4xl mx-auto px-4 md:px-8">
                     <h1 className="text-4xl md:text-5xl font-serif text-[#D4B878] mb-4">Terms of Service</h1>
                     <p className="text-sm text-gray-400 mb-12">Last Updated: 2026 | Arvayon Pro Build Studio</p>
 
                     <div className="space-y-8 text-gray-300 leading-relaxed">
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">1. Introduction</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">1. Introduction</h2>
                             <p>
                                 Welcome to Arvayon Pro Build Studio (“Company”, “we”, “our”, “us”).
                                 We are a professional Architectural, Engineering, and Project Management Consultancy, providing client-side advisory, planning coordination, design coordination, and construction management services.
@@ -29,7 +29,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">2. Nature of Services</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">2. Nature of Services</h2>
                             <p className="mb-2">
                                 Arvayon Pro Build Studio operates as a consultancy firm. We do not function as a construction contractor or execution agency.
                             </p>
@@ -47,7 +47,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">3. No Contractor Relationship</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">3. No Contractor Relationship</h2>
                             <p className="mb-2">We act solely in the interest of the client as an independent consultant.</p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>We do not supply labor, materials, or construction execution</li>
@@ -58,7 +58,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">4. Client Responsibilities</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">4. Client Responsibilities</h2>
                             <p className="mb-2">Clients agree to:</p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Provide accurate project details, site information, and documents</li>
@@ -72,7 +72,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">5. Fees & Payments</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">5. Fees & Payments</h2>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Consultancy fees are service-based, not square-foot based</li>
                                 <li>Fees are non-refundable once services are initiated</li>
@@ -85,7 +85,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">6. Approvals & Regulatory Authorities</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">6. Approvals & Regulatory Authorities</h2>
                             <p className="mb-2">While we assist with approval documentation and coordination:</p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Final approval decisions rest solely with government authorities</li>
@@ -95,7 +95,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">7. Intellectual Property</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">7. Intellectual Property</h2>
                             <p>
                                 All drawings, designs, documents, reports, BOQs, and content created by Arvayon Pro Build Studio remain our intellectual property unless otherwise agreed in writing.
                             </p>
@@ -105,7 +105,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">8. Limitation of Liability</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">8. Limitation of Liability</h2>
                             <p className="mb-2">Arvayon Pro Build Studio shall not be liable for:</p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Contractor execution errors</li>
@@ -119,7 +119,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">9. Termination of Services</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">9. Termination of Services</h2>
                             <p className="mb-2">We reserve the right to suspend or terminate services if:</p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Payment terms are violated</li>
@@ -132,7 +132,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">10. Governing Law</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">10. Governing Law</h2>
                             <p>
                                 These Terms shall be governed by and interpreted in accordance with the laws of India.
                                 Any disputes shall be subject to the jurisdiction of Tamil Nadu courts.
@@ -140,7 +140,7 @@ const TermsPage = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl text-secondary mb-4">11. Contact Information</h2>
+                            <h2 className="text-2xl text-[#D4B878] mb-4">11. Contact Information</h2>
                             <p>For questions regarding these Terms:</p>
                             <p className="mt-1">📧 arvayonprobuildstudio@gmail.com</p>
                         </section>

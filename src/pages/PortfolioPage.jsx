@@ -14,7 +14,7 @@ const PortfolioPage = () => {
                 url="/portfolio"
             />
             <Navbar />
-            <div className="pt-16 md:pt-20">
+            <div className="pt-24 md:pt-32">
                 <Portfolio />
             </div>
             <Footer />
